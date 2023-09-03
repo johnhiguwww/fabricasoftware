@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{% static 'assets/logo.png' %}" type="image/png">
+    <link rel="stylesheet" href="{% static 'css/signup_style.css' %}"> <!-- Renomeie o arquivo CSS conforme necessário -->
+    <title>Login LVA CURSOS</title>
+</head>
+<body>
+    <div class="container">       
+        <h2>My Ranker Movie</h2>
+        <form action="" method="POST">
+            {% csrf_token %}
+            <!--1º MOVIE-->
+            <div class="input-group">
+                <label for="moviename1">Movie Name</label>
+                <input type="text" id="moviename1" name="moviename" >
+            </div>
+            <div class="input-group">
+                <label for="synopsis1">Synopsis</label>
+                <input type="text" id="synopsis1" name="synopsis1" >
+            </div>
+            <!--2º MOVIE-->
+            <div class="input-group">
+                <label for="moviename2">Movie Name</label>
+                <input type="text" id="moviename2" name="moviename2" >
+            </div>
+            <div class="input-group2">
+                <label for="synopsis2">Synopsis</label>
+                <input type="text" id="synopsis2" name="synopsis2" >
+            </div>
+            <!--3º MOVIE-->
+            <div class="input-group">
+                <label for="moviename3">Movie Name</label>
+                <input type="text" id="moviename3" name="moviename3" >
+            </div>
+            <div class="input-group">
+                <label for="synopsis3">Synopsis</label>
+                <input type="text" id="synopsis3" name="synopsis3" >
+            </div>
+            <button class="btn" type="submit">imprimir</button>
+        </form>
+    </div> 
+</body>
+</html>
